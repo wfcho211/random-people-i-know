@@ -1,0 +1,37 @@
+@import 'variables';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-header {
+  min-width: 320px;
+  position: relative;
+  height: $header-height;
+  user-select: none;
+  overflow: hidden;
+
+  &-inner{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #222;
+    padding: 10px;
+    min-width: 320px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $header-height;
+
+    @media (min-width: $screen-md) {
+      padding: 10px 20px;
+    }
+  }
+}
+
+.container-inner {
+  max-width: 700px;
+  margin: auto;
+}

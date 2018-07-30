@@ -1,0 +1,92 @@
+@import '../../../../sass/variables';
+
+.UserList {
+  &-item {
+    img {
+      width: 128px;
+      height: 128px;
+    }
+
+    &-details {
+      background-color: #ececec;
+      max-width: 200px;
+      text-align: center;
+    }
+
+    &-picture {
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      color: #666;
+      font-weight: bold;
+    }
+
+    label {
+      color: #555;
+    }
+  }
+}
+
+.button-wrapper {
+  .LoadButton {
+    cursor: pointer;
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #fff;
+    width: 50%;
+    min-width: 130px;
+    transition: width .8s cubic-bezier(0.420, 0.000, 1.000, 1.000);
+
+    &:hover {
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+      width: 100%;
+    }
+  }
+}
+
+
+
+.MessageText {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s, opacity 0.5s linear;
+
+  &.faded {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// Rewrite bootstrap
+.Pagination {
+  .input-group > .input-group-prepend > .input-group-text,
+  .input-group > .input-group-append > .input-group-text,
+  .input-group > .form-control {
+    border: 1px solid #209afe;
+    border-radius: 0;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  .input-group > .input-group-prepend > .input-group-text,
+  .input-group > .input-group-append > .input-group-text {
+    color: #209afe;
+  }
+
+  .input-group > .input-group-prepend > .input-group-text {
+    border-right: 0;
+  }
+
+  .input-group-text {
+    color: #209afe;
+    font-weight: 700;
+    border: 1px solid #209afe;
+    background-color: #daeffe;
+    font-size: 12px;
+  }
+}
