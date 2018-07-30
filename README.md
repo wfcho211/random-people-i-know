@@ -1,4 +1,4 @@
-# Human of The World
+# Random People I know
 
 #### Technologies
 - [Webpack](https://webpack.github.io/)
