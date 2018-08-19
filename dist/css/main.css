@@ -1,1 +1,149 @@
-body{font-family:Roboto,sans-serif}.app-header{height:60px;min-width:320px;overflow:hidden;position:relative;user-select:none}.app-header-inner{background-color:#222;color:#fff;font-size:20px;height:60px;left:0;min-width:320px;padding:10px;position:fixed;right:0;text-align:center;top:0;z-index:999}@media (min-width:992px){.app-header-inner{padding:10px 20px}}.container-inner{margin:auto;max-width:700px}.UserList-item img{height:128px;width:128px}.UserList-item-details{background-color:#ececec;max-width:200px;text-align:center}.UserList-item-picture{margin-bottom:10px;overflow:hidden}.UserList-item-text{color:#666;font-weight:700}.UserList-item label{color:#555}.button-wrapper .LoadButton{background-color:#17a2b8;border:1px solid #17a2b8;border-radius:3px;color:#fff;cursor:pointer;min-width:130px;padding:5px 10px;transition:width .8s ease-in;width:50%}.button-wrapper .LoadButton:hover{box-shadow:0 2px 5px 0 rgba(0,0,0,.5);text-shadow:0 2px 5px rgba(0,0,0,.5);width:100%}.MessageText{opacity:1;transition:visibility .3s,opacity .5s linear;visibility:visible}.MessageText.faded{opacity:0;visibility:hidden}.Pagination .input-group>.form-control,.Pagination .input-group>.input-group-append>.input-group-text,.Pagination .input-group>.input-group-prepend>.input-group-text{border:1px solid #209afe;border-radius:0;font-size:12px;height:33px}.Pagination .input-group>.input-group-append>.input-group-text,.Pagination .input-group>.input-group-prepend>.input-group-text{color:#209afe}.Pagination .input-group>.input-group-prepend>.input-group-text{border-right:0}.Pagination .input-group-text{background-color:#daeffe;border:1px solid #209afe;color:#209afe;font-size:12px;font-weight:700}.MessageText{background-color:#019934;border:0;border-radius:0;color:#fff;margin-bottom:10px;max-width:none;padding:10px 20px;text-align:center}.MessageText.alert-danger{background-color:#ed1c24}.MessageText.alert-warning{background-color:#e9a33c}.Pagination{margin:auto;padding:30px 0;text-align:center}.Pagination ul{margin-bottom:0}.Pagination li{display:inline-block;padding:0}.Pagination li:first-child a,.Pagination li:last-child a{height:33px}.Pagination a{border:1px solid #209afe;color:#209afe;display:inline-block;font-size:16px;font-weight:700;line-height:1;margin:0 3px;min-width:30px;padding:7px;text-align:center}.Pagination a:focus,.Pagination a:hover{text-decoration:none}.Pagination a.__active,.Pagination a:hover{background-color:#daeffe}.Pagination a.__disabled{border:1px solid #ececec;color:#ececec;cursor:default;pointer-events:none}.Pagination li.disabled a{cursor:default;opacity:.3;pointer-events:none}.Pagination li.active a{color:#209afe}
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.app-header {
+  min-width: 320px;
+  position: relative;
+  height: 60px;
+  user-select: none;
+  overflow: hidden; }
+  .app-header-inner {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #222;
+    padding: 10px;
+    min-width: 320px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; }
+    @media (min-width: 992px) {
+      .app-header-inner {
+        padding: 10px 20px; } }
+
+.container-inner {
+  max-width: 700px;
+  margin: auto; }
+
+.UserList-item img {
+  width: 128px;
+  height: 128px; }
+
+.UserList-item-details {
+  background-color: #ececec;
+  max-width: 200px;
+  text-align: center; }
+
+.UserList-item-picture {
+  overflow: hidden;
+  margin-bottom: 10px; }
+
+.UserList-item-text {
+  color: #666;
+  font-weight: bold; }
+
+.UserList-item label {
+  color: #555; }
+
+.button-wrapper .LoadButton {
+  cursor: pointer;
+  background-color: #17a2b8;
+  border: 1px solid #17a2b8;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #fff;
+  width: 50%;
+  min-width: 130px;
+  transition: width 0.8s cubic-bezier(0.42, 0, 1, 1); }
+  .button-wrapper .LoadButton:hover {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    width: 100%; }
+
+.MessageText {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s, opacity 0.5s linear; }
+  .MessageText.faded {
+    opacity: 0;
+    visibility: hidden; }
+
+.Pagination .input-group > .input-group-prepend > .input-group-text,
+.Pagination .input-group > .input-group-append > .input-group-text,
+.Pagination .input-group > .form-control {
+  border: 1px solid #209afe;
+  border-radius: 0;
+  height: 33px;
+  font-size: 12px; }
+
+.Pagination .input-group > .input-group-prepend > .input-group-text,
+.Pagination .input-group > .input-group-append > .input-group-text {
+  color: #209afe; }
+
+.Pagination .input-group > .input-group-prepend > .input-group-text {
+  border-right: 0; }
+
+.Pagination .input-group-text {
+  color: #209afe;
+  font-weight: 700;
+  border: 1px solid #209afe;
+  background-color: #daeffe;
+  font-size: 12px; }
+
+.MessageText {
+  background-color: #019934;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 0;
+  max-width: none;
+  text-align: center; }
+  .MessageText.alert-danger {
+    background-color: #ed1c24; }
+  .MessageText.alert-warning {
+    background-color: #e9a33c; }
+
+.Pagination {
+  margin: auto;
+  text-align: center;
+  padding: 30px 0; }
+  .Pagination ul {
+    margin-bottom: 0; }
+  .Pagination li {
+    padding: 0;
+    display: inline-block; }
+    .Pagination li:first-child a, .Pagination li:last-child a {
+      height: 33px; }
+  .Pagination a {
+    display: inline-block;
+    min-width: 30px;
+    padding: 7px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 3px;
+    color: #209afe;
+    border: 1px solid #209afe; }
+    .Pagination a:hover, .Pagination a:focus {
+      text-decoration: none; }
+    .Pagination a.__active, .Pagination a:hover {
+      background-color: #daeffe; }
+    .Pagination a.__disabled {
+      cursor: default;
+      pointer-events: none;
+      border: 1px solid #ececec;
+      color: #ececec; }
+  .Pagination li.disabled a {
+    opacity: .3;
+    cursor: default;
+    pointer-events: none; }
+  .Pagination li.active a {
+    color: #209afe; }
+
+
+/*# sourceMappingURL=main.css.map*/

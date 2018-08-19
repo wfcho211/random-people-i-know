@@ -28,12 +28,15 @@ export default class UserList extends Component {
             fading      : false
         };
 
-        this._onButtonClick = this._onButtonClick.bind(this);
         this._onKeyPress = this._onKeyPress.bind(this);
         this._onPaginationClick = this._onPaginationClick.bind(this);
         this._onPaginationChange = this._onPaginationChange.bind(this);
 
         this.__perpage = 3;
+    }
+
+    componentDidMount() {
+        this.fetchUsers();
     }
 
     componentWillReceiveProps(nextProps) {
@@ -69,17 +72,7 @@ export default class UserList extends Component {
                             </div>
                         }
 
-                        {!isLoading && isEmpty(items) &&
-                            <div className="button-wrapper">
-                                <button type="button" className="LoadButton"
-                                    onClick={this._onButtonClick}
-                                >
-                                    {`+ Click to view`}
-                                </button>
-                            </div>
-                        }
-
-                        {!isLoading && !isEmpty(items) &&
+                        {!isLoading &&
                             <div className="row">
                                 {
                                     map(items, (item, index) => {
@@ -138,11 +131,6 @@ export default class UserList extends Component {
                 </div>
             </div>
         )
-    }
-
-    _onButtonClick(e) {
-        e.preventDefault();
-        this.fetchUsers();
     }
 
     _onKeyPress(e) {
